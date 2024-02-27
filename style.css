@@ -1,0 +1,98 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: rgb(70, 69, 69);
+    border-radius: 5rem;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #fff;
+}
+.header-items {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    font-weight: 400;
+    
+        .logo-wrapper {
+            .logo {
+                text-decoration: none;
+                color: rgb(70, 69, 69);
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+        .navbar {
+            display: flex;
+            font-size: 20px;
+            gap: 30px;
+                li {
+                    list-style: none;
+                }
+                    a {
+                    text-decoration: none;
+                    color: rgb(70, 69, 69);
+                    }
+                    a:hover {
+                        border-bottom: 0.5px solid rgb(156, 155, 155);
+                        transform: scale(2);
+                    }
+        }
+        
+}
+
+.main-title {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/pexels-tobi-674268.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    color: #484747;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    overflow: hidden;
+    background-position: center;
+}
+    
+.shop-title {
+    padding: 30px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.products-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+     .card {
+      text-align: center;  
+         .post-img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            background-position: center;
+            overflow: hidden;
+         }
+         .post-img:hover {
+            box-shadow: 0px 0px 16px rgb(156, 155, 155);
+         }
+     }
+}
