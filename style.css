@@ -94,7 +94,7 @@ header {
     background-position: center;
 }
     
-.shop-title {
+.title {
     padding: 100px 0;
     font-weight: bold;
     font-size: 40px;
@@ -183,6 +183,22 @@ header {
         }
 }
 
+
+.free-shipping-title {
+    padding-left: 50px;
+}
+
+.brands  {
+    display: flex;
+    
+    justify-content: space-between;
+}
+.brands img {
+    width: 10%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
 .footer {
     background-color: #484747;
     margin-top: 100px;
@@ -204,6 +220,14 @@ header {
         .line {
             border-bottom: 1px solid #fff;
             margin: 0 500px;
+        }
+        .payment-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .payment-icons img {
+            width: 2%;
         }
         .icons {
             display: flex;
